@@ -1,0 +1,47 @@
+$menuBarBackground: #23212A;
+.menuBar{
+  background-color: rgba($menuBarBackground, 0.5);
+  display: flex;
+  width: 100%;
+  height: 78px;
+  &-items{
+    width: 53%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    &-menuItem{
+      color: var(--menuItem-color);
+    }
+  }
+  &-networks{
+    width: 45%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+    &-instagram{
+      width: 20px;
+      height: 20px;
+      background-image: url("menu-bar-img/icon-instagram.png");
+    }
+    &-facebook{
+      width: 22px;
+      height: 20px;
+      background-image: url("menu-bar-img/icon-facebook.png");
+    }
+    &-twitter{
+      width: 20px;
+      height: 16px;
+      background-image: url("menu-bar-img/icon-twitter.png");
+    }
+    &-linkedin{
+      width: 20px;
+      height: 20px;
+      background-image: url("menu-bar-img/icon-linkdin.png");
+    }
+    &-requestQuote{
+      width: 215px;
+      height: 78px;
+    }
+  }
+}

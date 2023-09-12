@@ -1,0 +1,52 @@
+.header{
+  height: 160px;
+  background-color: var(--header-color);
+  display: flex;
+  align-items: center;
+  &-centralBlock{
+    width: 100%;
+    display: flex;
+    &-companyLogo{
+      width: 30%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      &-logo{
+        width: 211px;
+        height: 36px;
+        background: url("../header-img/company-logo.png");
+      }
+    }
+    &-addressBar{
+      display: flex;
+      width: 60%;
+      justify-content: space-evenly;
+      &-contain{
+        display: flex;
+        &-time{
+          width: 64px;
+          height: 64px;
+          background: url("../header-img/time-icon.png");
+        }
+        &-email{
+          width: 64px;
+          height: 64px;
+          background: url("../header-img/email-icon.png");
+        }
+        &-callUs{
+          width: 64px;
+          height: 63px;
+          background: url("../header-img/call-icon.png");
+        }
+        &-text{
+          width: 61%;
+          margin-left: 15px;
+          color: var(--header-text-color);
+          letter-spacing: 0.5px;
+          display: flex;
+          align-items: center;
+        }
+      }
+    }
+  }
+}
