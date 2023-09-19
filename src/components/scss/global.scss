@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Krub:wght@200;400;500;700&display=swap');
+
 * {
   margin: 0;
   padding: 0;
@@ -5,10 +8,10 @@
   text-decoration: none;
 }
 
-:root{
-  --linear-color: #2947A9;
-  --second-linear-color: #FFFFFF;
-  --header-color: #091242;
-  --header-text-color: #F4F4F4;
-  --menuItem-color: #F4F4F4;
-}
+$header-color: #091242;
+$text-color: #F4F4F4;
+$menuItem-color: #F4F4F4;
+$menuBarBackground: #23212A;
+$background-color-subText: #041C37;
+$linear-color: #FFB629;
+$second-linear-color: #FFD7A6;
