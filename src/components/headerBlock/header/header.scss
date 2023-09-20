@@ -21,18 +21,15 @@
     &-addressBar{
       display: flex;
       flex-wrap: wrap;
+      justify-content: space-between;
 
       &-contain{
         display: flex;
-        &-time{
-        }
-        &-email{
-        }
-        &-callUs{
-        }
         &-text{
           width: 61%;
           margin-left: 15px;
+          font-size: 0.8rem;
+          font-family: 'Krub', serif;
           color: $text-color;
           letter-spacing: 0.5px;
           display: flex;
@@ -41,28 +38,78 @@
       }
       @media all and (max-width: 1200px) {
         &-contain{
-          width: 33%;
+          width: 30%;
           display: flex;
           align-items: center;
           &-time{
-            width: 50px;
-            height: 50px;
+            width: 45px;
+            height: 45px;
           }
           &-email{
-            width: 50px;
-            height: 50px;
+            width: 45px;
+            height: 45px;
           }
           &-callUs{
-            width: 50px;
-            height: 50px;
+            width: 45px;
+            height: 45px;
           }
           &-text{
-            width: 61%;
+            width: 70%;
             margin-left: 15px;
             color: $text-color;
             letter-spacing: 0.5px;
             display: flex;
             align-items: center;
+          }
+        }
+      }
+    }
+    @media all and (max-width: 1049px) {
+      &-companyLogo{
+        &-logo{
+          width: 150px;
+        }
+      }
+      &-addressBar {
+        &-contain {
+          width: 31%;
+          justify-content: space-evenly;
+
+          &-time {
+            width: 35px;
+            height: 35px;
+          }
+
+          &-email {
+            width: 35px;
+            height: 35px;
+          }
+
+          &-callUs {
+            width: 35px;
+            height: 35px;
+          }
+
+          &-text {
+            font-size: 0.8rem;
+          }
+        }
+      }
+    }
+    @media all and (max-width: 1049px) {
+      &-companyLogo{
+        &-logo{
+          width: 150px;
+        }
+      }
+      &-addressBar {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+
+        &-contain {
+          &-text {
+            font-size: 0.8rem;
           }
         }
       }

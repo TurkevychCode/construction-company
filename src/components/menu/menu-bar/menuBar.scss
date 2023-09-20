@@ -1,113 +1,106 @@
 @import "src/components/scss/global";
-.menuBar{
+
+.menuBar {
   background-color: rgba($menuBarBackground, 0.5);
   width: 100%;
   height: 78px;
-  &-block{
-    width: 1200px;
+  padding: 0 50px 0 50px;
+
+  &-block {
+    max-width: 1200px;
     margin: auto;
     display: flex;
-    &-items{
+
+    &-items {
       width: 36%;
       display: flex;
       justify-content: space-between;
       align-items: center;
-      &-menuItem{
+
+      &-menuItem {
         color: $menuItem-color;
+        font-family: 'Krub', serif;
+        font-weight: 600;
+        font-size: 1rem;
       }
     }
-    &-networks{
+
+    &-networks {
       width: 64%;
       display: flex;
       justify-content: flex-end;
       align-items: center;
-      &-icons{
+
+      &-icons {
         width: 30%;
         margin-right: 20px;
         height: 78px;
         display: flex;
         align-items: center;
         justify-content: space-evenly;
-        &-instagram{
+
+        &-instagram {
           width: 20px;
           height: 20px;
           background-image: url("menu-bar-img/icon-instagram.png");
         }
-        &-facebook{
+
+        &-facebook {
           width: 22px;
           height: 20px;
           background-image: url("menu-bar-img/icon-facebook.png");
         }
-        &-twitter{
+
+        &-twitter {
           width: 20px;
           height: 16px;
           background-image: url("menu-bar-img/icon-twitter.png");
         }
-        &-linkedin{
+
+        &-linkedin {
           width: 20px;
           height: 20px;
           background-image: url("menu-bar-img/icon-linkdin.png");
         }
       }
-      &-requestQuote{
+
+      &-requestQuote {
         width: 215px;
         height: 78px;
+        font-size: 1rem;
       }
     }
-  }
-  @media all and(max-width: 1200px){
-    &-block{
-      width: 1200px;
-      margin: auto;
-      display: flex;
-      &-items{
-        width: 36%;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        &-menuItem{
-          color: $menuItem-color;
+
+    @media (max-width: 1200px) {
+      &-items {
+        width: 45%;
+        &-menuItem {
+          font-weight: 400;
         }
       }
-      &-networks{
-        width: 64%;
-        display: flex;
-        justify-content: flex-end;
-        align-items: center;
-        &-icons{
-          width: 30%;
-          margin-right: 20px;
+      &-networks {
+        width: 55%;
+        &-requestQuote {
+          width: 215px;
           height: 78px;
-          display: flex;
-          align-items: center;
-          justify-content: space-evenly;
-          &-instagram{
-            width: 20px;
-            height: 20px;
-            background-image: url("menu-bar-img/icon-instagram.png");
-          }
-          &-facebook{
-            width: 22px;
-            height: 20px;
-            background-image: url("menu-bar-img/icon-facebook.png");
-          }
-          &-twitter{
-            width: 20px;
-            height: 16px;
-            background-image: url("menu-bar-img/icon-twitter.png");
-          }
-          &-linkedin{
-            width: 20px;
-            height: 20px;
-            background-image: url("menu-bar-img/icon-linkdin.png");
-          }
         }
-        &-requestQuote{
+      }
+    }
+    @media (max-width: 1049px) {
+      &-items {
+        width: 40%;
+        &-menuItem {
+          font-size: 0.9rem;
+        }
+      }
+      &-networks {
+        width: 60%;
+
+        &-requestQuote {
           width: 215px;
           height: 78px;
         }
       }
     }
   }
-
 }

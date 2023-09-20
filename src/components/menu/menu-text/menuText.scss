@@ -1,6 +1,6 @@
 @import "src/components/scss/global";
 .menuText{
-  width: 1200px;
+  max-width: 1200px;
   margin: auto;
   padding-top: 173px;
   &-block{
@@ -38,6 +38,7 @@
       height: 60px;
       font-family: 'Krub', serif;
       font-size: 1rem;
+      font-weight: 600;
       background: linear-gradient(to right, $linear-color, $second-linear-color);
       border: none;
       border-radius: 5px;

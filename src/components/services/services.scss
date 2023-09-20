@@ -1,14 +1,71 @@
-.services{
+@import "src/components/scss/global";
+.services {
   width: 100%;
-  height: 450px;
+  padding: 90px 0 90px 0;
 
-  &-block{
+  &-block {
+    max-width: 1200px;
+    height: 310px;
+    margin: auto;
+    display: flex;
 
-    &-heading{
-
+    &-heading {
+      width: 30%;
+      &-subText {
+        font-family: Rubik,serif;
+        color: $text-color-black;
+        font-size: 0.8rem;
+        padding: 5px 8px 5px 10px;
+        background-color: rgba($background-color-services-subText, 0.5);
+        border-left: 4px solid $linear-color;
+        cursor: pointer;
+      }
+      &-title{
+        margin-top: 15px;
+        font-family: Rubik,serif;
+        font-weight: 500;
+        font-size: 2.2rem;
+      }
     }
-    &-content{
 
+    &-content {
+      width: 70%;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+
+      &-infoContent{
+        display: flex;
+        width: 100%;
+        &-blockInfo{
+          width: 50%;
+          display: flex;
+
+          &-icon{
+            width: 50px;
+            height: 54px;
+            margin-right: 35px;
+          }
+
+          &-textInfo{
+            width: 70%;
+            height: 110px;
+            padding: 0 0 0 20px;
+            border-left: 2px solid $border-right-service-color;
+            &-title{
+              font-family: Rubik,serif;
+              font-size: 1.5rem;
+              margin-bottom: 13px;
+            }
+            &-description{
+              font-family: Krub,serif;
+              font-size: 1rem;
+              font-weight: 500;
+              line-height: 1.5;
+            }
+          }
+        }
+      }
     }
   }
 

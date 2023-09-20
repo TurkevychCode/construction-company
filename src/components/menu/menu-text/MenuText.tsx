@@ -3,7 +3,7 @@ export default function MenuText() {
         <div className='menuText'>
             <div className='menuText-block'>
                 <div className='menuText-block-blockSubText'>
-                    <p className='menuText-block-blockSubText-subText'>Logistics & Supply Chain Solutions</p>
+                    <a href='' className='menuText-block-blockSubText-subText'>Logistics & Supply Chain Solutions</a>
                 </div>
                 <h2 className='menuText-block-title'>Your Gateway
                     <br/>
